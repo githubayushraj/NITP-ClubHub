@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Hero4 />
+      Hello!
       {/* hero-section-4-component */}
     </>
   );
