@@ -2,15 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/homePage.jsx"; 
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App=()=>{
   return (
     <>
-      <p className='text-6xl font-bold text-pink-600 hover:text-sky-600 text-center pt-48'>REACT+TAILWIND SETUP</p>
+     <div className="min-h-screen bg-cover bg-center " style={{ backgroundImage: `url('./images/realpic.png')` }}>
+            <Router>
+             
+                <Routes>
+                    <Route path="/"
+                     element={<HomePage />} />
+                </Routes>
+            </Router>
+        </div>
     </>
   )
 }
+
+  
+
 
 export default App
