@@ -1,5 +1,5 @@
 import "./App.css";
-import Previous from "../components/previous";
+import Previous from "./events/previous";
 import { useState } from "react";
 import Hero4 from "./hero-section4/hero-sect4";
 import Footer from './Footer/Footer'
