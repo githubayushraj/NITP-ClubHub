@@ -1,4 +1,5 @@
 import "./App.css";
+import Previous from "./events/previous";
 import { useState } from "react";
 import Hero4 from "./hero-section4/hero-sect4";
 import Footer from './Footer/Footer'
@@ -15,9 +16,11 @@ function App() {
       <Hero2 />
        <Hero4 />;
        <Hero5/>
+       <Previous/>
        <Footer />
     </>
-  )
+    
+  );
 }
 
 export default App;
